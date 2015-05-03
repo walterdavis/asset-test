@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Assets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Blob file name</th>
+      <th>Blob content type</th>
+      <th>Blob file size</th>
+      <th>Blob width</th>
+      <th>Blob height</th>
+      <th>Blob metadata</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @assets.each do |asset| %>
+      <tr>
+        <td><%= asset.project %></td>
+        <td><%= asset.blob_file_name %></td>
+        <td><%= asset.blob_content_type %></td>
+        <td><%= asset.blob_file_size %></td>
+        <td><%= asset.blob_width %></td>
+        <td><%= asset.blob_height %></td>
+        <td><%= asset.blob_metadata %></td>
+        <td><%= link_to 'Show', asset %></td>
+        <td><%= link_to 'Edit', edit_asset_path(asset) %></td>
+        <td><%= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Asset', new_asset_path %>

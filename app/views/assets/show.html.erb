@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @asset.project %>
+</p>
+
+<p>
+  <strong>Blob file name:</strong>
+  <%= @asset.blob_file_name %>
+</p>
+
+<p>
+  <strong>Blob content type:</strong>
+  <%= @asset.blob_content_type %>
+</p>
+
+<p>
+  <strong>Blob file size:</strong>
+  <%= @asset.blob_file_size %>
+</p>
+
+<p>
+  <strong>Blob width:</strong>
+  <%= @asset.blob_width %>
+</p>
+
+<p>
+  <strong>Blob height:</strong>
+  <%= @asset.blob_height %>
+</p>
+
+<p>
+  <strong>Blob metadata:</strong>
+  <%= @asset.blob_metadata %>
+</p>
+
+<%= link_to 'Edit', edit_asset_path(@asset) %> |
+<%= link_to 'Back', assets_path %>
