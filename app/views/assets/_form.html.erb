@@ -12,32 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :project_id %><br>
-    <%= f.text_field :project_id %>
-  </div>
-  <div class="field">
-    <%= f.label :blob_file_name %><br>
-    <%= f.text_field :blob_file_name %>
-  </div>
-  <div class="field">
-    <%= f.label :blob_content_type %><br>
-    <%= f.text_field :blob_content_type %>
-  </div>
-  <div class="field">
-    <%= f.label :blob_file_size %><br>
-    <%= f.number_field :blob_file_size %>
-  </div>
-  <div class="field">
-    <%= f.label :blob_width %><br>
-    <%= f.number_field :blob_width %>
-  </div>
-  <div class="field">
-    <%= f.label :blob_height %><br>
-    <%= f.number_field :blob_height %>
-  </div>
-  <div class="field">
-    <%= f.label :blob_metadata %><br>
-    <%= f.text_area :blob_metadata %>
+    <%= f.label :blob %><br>
+    <%= f.file_field :blob %>
   </div>
   <div class="actions">
     <%= f.submit %>

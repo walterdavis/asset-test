@@ -69,6 +69,6 @@ class AssetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def asset_params
-      params.require(:asset).permit(:project_id, :blob_file_name, :blob_content_type, :blob_file_size, :blob_width, :blob_height, :blob_metadata)
+      params.require(:asset).permit(:blob)
     end
 end
